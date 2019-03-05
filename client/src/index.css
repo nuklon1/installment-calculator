@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {text-shadow: -1px -1px #1C222D, 0 1px 0 #333}
+
+.container{display:flex;flex-direction:row;align-items:stretch}
+.box-shadow {box-shadow:0 0 8px rgba(0, 0, 0, 0.2)}
+
+/* ant-card */
+
+.ant-card-actions {
+    border-color: #1C222D !important;
+}
+.ant-card-actions {
+    background: transparent !important;
+}
+.ant-card-actions > li:not(:last-child) {
+    border-right: 1px solid #1C222D !important;
+}
+.ant-card-body, .ant-card-actions > li i {
+  color: #6392b6
+}
+
+/* ant-select */
+
+.ant-select, label.ant-checkbox-wrapper {
+    margin: 1rem 0 !important
+}
+
+.ant-select-selection, .ant-select-dropdown-menu li, .ant-slider-rail, .ant-input-number, .ant-input-number-input {
+    background-color: #9ba9c3 !important;
+    border-color: #9ba9c3 !important
+}
+
+.ant-select-dropdown-menu li:hover {
+  background-color: #acb7cc !important
+}
+
+
+/* ant-checkbox */
+
+label.ant-checkbox-wrapper span {color:#6392b6}
+
+
+/* ant-slider 
+
+.ant-input-number {width:60px !important}
+*/
+
+#calc-result {
+  padding:3rem;
+  background-color: #262c36 !important;
+  border:1px solid #1C222D;
+  border-radius:.25rem;
+  color:#000;
+  font-size:120%;
+  margin:32px 0 16px -16px;
+  text-align:right;
+  text-shadow:-1px -1px #262c36, 0 1px 0 #333;
+  width:270px
+}
+
+
+/* ant-form */
+
+.ant-form-item {margin-bottom: 14px !important}
