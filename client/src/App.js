@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
-// import {bindActionCreators} from 'redux'; 
 import {connect} from 'react-redux';
 
 import { getSettings } from './actions/settingsAction';
-//import * as settingsAction from './actions/settingsAction';
-
-// import calcData from './settings.json';
 
 import CalcInterface from './containers/CalcInterface';
 
-//import logo from './logo.svg';
 import 'antd/dist/antd.css';
 import './App.css';
 import { Icon } from 'antd';
@@ -48,10 +42,6 @@ class App extends Component {
         );
     }
 }
-
-// CalcInterface.propTypes = {
-//     fetchData: PropTypes.object.isRequired
-// }
 
 const mapStateToProps = (state) => {
     return {
