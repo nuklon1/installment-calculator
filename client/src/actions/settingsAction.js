@@ -17,9 +17,9 @@ export function updateSettings(newSettings) {
                 console.log('Success:', response);
 
                 if (response.data.type === 'success') {
-                    dispatch(updateSuccess({})); // костыль для сбрасывания формы (передаю пустой объект и вследом обновленные данные)
-                    setTimeout(async () => {
-                        dispatch(updateSuccess(response.data.data.body));  // newSettings
+                    dispatch(updateSuccess({}));
+                    setTimeout(() => {
+                        dispatch(updateSuccess(response.data.data.body));
                     }, 500);
                 } else {
                     alert(response.data.data.text);
